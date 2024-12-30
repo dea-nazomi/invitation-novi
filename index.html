@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Pernikahan Riki & Delly</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Gardena+Holmes&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Menambahkan elemen audio untuk nasheed yang autoplay dan loop -->
+<audio id="nasheedAudio" loop>
+  <source src="assets/audio/nasheed.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<!-- Cover Section -->
+<section id="cover" class="section">
+  <div class="cover-content">
+      <img src="assets/images/NAMA-COVER WEB-2.png" alt="Cover">
+      <h1 class="couple-name">
+          <span class="kepada-yth">Kepada Yth.</span><br>
+          <span class="nama-tamu">Nama Tamu</span>
+      </h1>      
+<!-- Tombol Buka Undangan -->
+<button class="open-invitation" onclick="openInvitation()">
+  <i class="fas fa-envelope"></i> Buka Undangan
+</button>
+  </div>
+</section>
+
+  <!-- Countdown Section -->
+  <section id="countdown" class="section">
+    <div class="countdown-content">
+      <p class="happy-couple">Yang Berbahagia</p>
+      <img src="assets/images/NAMA-PENGANTIN-2.png" alt="Nama Pengantin" class="pengantin-img">
+      <p class="save-the-date">Save The Date</p>
+      <p class="date">25 | 12 | 24</p>
+
+      <div class="countdown-timer" style="background-image: url('assets/images/BG_COUNTDOWN.png');">
+        <div id="days" class="countdown-box">
+          <div class="countdown-value" id="dayValue"></div>
+          <span class="countdown-label">Hari</span>
+        </div>
+        <div id="hours" class="countdown-box">
+          <div class="countdown-value" id="hourValue"></div>
+          <span class="countdown-label">Jam</span>
+        </div>
+        <div id="minutes" class="countdown-box">
+          <div class="countdown-value" id="minuteValue"></div>
+          <span class="countdown-label">Menit</span>
+        </div>
+        <div id="seconds" class="countdown-box">
+          <div class="countdown-value" id="secondValue"></div>
+          <span class="countdown-label">Detik</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- Ayat --> 
+<div class="ayat">
+  <p>
+    وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا
+  </p>
+  <p>
+    وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةًۗ اِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ
+  </p>
+  <p>
+    "Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia
+  </p>
+  <p>
+    menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri
+  </p>
+  <p>
+    agar kamu cenderung merasa tenteram kepadanya. Dan Dia
+  </p>
+  <p>
+    menjadikan di antaramu rasa kasih dan sayang."
+  </p>
+  <p>
+    <i>Qs. Ar-Rum :21</i>
+  </p>
+</div>
+
+
+<!-- Detail Section -->
+<section id="detail" class="section">
+  <div class="detail-content">
+    <p class="opening arabic-text">بسم الله الرحمن الرحيم</p>
+    <p class="greeting">Assalamu’alaikum warahmatullahi wabarakatuh</p>
+    <p class="introduction">
+      Dengan Rahmat dan Ridho Allah SWT, kami akan menyelenggarakan pernikahan putra-putri kami:
+    </p>
+
+    <div class="bride-groom">
+      <div class="bride">
+        <img src="assets/images/NAMA-PW.png" alt="Nama Pengantin Wanita">
+        <p>Putri dari Bapak Winda Syafril, S.Sos</p>
+        <p>& Ibu Winda Budiyanti, S.E</p>
+      </div>
+
+      <div class="groom">
+        <img src="assets/images/NAMA-PP.png" alt="Nama Pengantin Pria">
+        <p>Putra dari Bapak Tarmin</p>
+        <p>& Ibu Jumini</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Event Details -->
+<section id="event-details" class="section">
+  <div class="event-details">
+    <p class="event-intro">Insyaa Allah akan diselenggarakan pada:</p> <!-- Dipindahkan di luar .event-border -->
+    <div class="event-border">
+      <h3>Rabu,
+        <br> 25.12.2024</h3> </br>
+      <div class="event-schedule">
+        <p class="event-time">Akad <br>08.00</p>
+        <p>
+        <p></p>
+        </p>
+        <p class="event-time">Resepsi <br>11:00 - 16:00 WIB</p>
+      </div>
+      <div class="separator"></div>
+      <div class="location-details">
+        <p class="location">Aryaduta Hotel Pekanbaru</p>
+        <p class="address">Jl. Diponegoro No.34, Simpang Empat, Kota Pekanbaru, Riau</p>
+      </div>      
+
+      <div class="map-container">
+        <!-- Gambar peta yang sesuai dengan lokasi pernikahan -->
+        <img src="assets/images/aryaduta-hotel-map.png" class="map">
+      </div>
+      <button class="open-map" onclick="openMap()">Buka Maps</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Live Streaming Section -->
+<section id="live-stream" class="section live-stream">
+  <h3>LIVE STREAMING</h3>
+  <p>Lihat siaran langsung pernikahan kami melalui Instagram Live <strong>#DELLastfoRIK</strong></p>
+  <button class="join-live" onclick="joinLive()">Join Live</button>
+</section>
+
+
+  <!-- RSVP Section -->
+  <section id="rsvp" class="section" style="background-image: url('BG_RSVP.png');">
+    <div class="rsvp-container">
+      <h2>RSVP</h2>
+      <p>Dimohon untuk mengisi konfirmasi kehadiran di bawah ini</p>
+
+      <div class="content-wrapper">
+        <!-- Form Section -->
+        <div class="form-section">
+          <form id="rsvp-form">
+            <label for="name"></label>
+            <input type="text" id="name" name="name" maxlength="25" required placeholder="Nama (Maksimal 25 Karakter):">
+
+            <label for="message"></label>
+            <textarea id="message" name="message" placeholder="Tulis ucapan atau doa di sini"></textarea>
+
+            <label for="attendance"></label>
+            <select id="attendance" name="attendance" required>
+              <option value="" disabled selected>Pilih Kehadiran</option>
+              <option value="hadir">Hadir</option>
+              <option value="ragu-ragu">Ragu-ragu</option>
+              <option value="tidak-hadir">Tidak Hadir</option>
+            </select>
+
+            <button type="submit">Kirim</button>
+          </form>
+        </div>
+
+        <!-- Messages Section -->
+        <div class="messages-section">
+          <div class="message-item">
+            <p><strong>Tamu 1</strong> <span class="status hadir">Hadir</span></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="message-item">
+            <p><strong>Tamu 2</strong> <span class="status hadir">Hadir</span></p>
+            <p>Etiam vitae metus ac eros convallis iaculis quis at magna.</p>
+          </div>
+          <div class="message-item">
+            <p><strong>Tamu 3</strong> <span class="status tidak-hadir">Tidak Hadir</span></p>
+            <p>Pellentesque habitant morbi tristique senectus et netus.</p>
+          </div>
+          <div class="message-item">
+            <p><strong>Tamu 4</strong> <span class="status ragu-ragu">Ragu-ragu</span></p>
+            <p>Mauris eget lobortis enim.</p>
+          </div>
+          <div class="pagination">
+            <a href="#">&lt; Sebelumnya</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">Selanjutnya &gt;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="section amplop-digital">
+    <div class="container">
+      <div class="content">
+        <h1>AMPLOP DIGITAL</h1>
+        <p>Ungkapan tanda kasih dari Anda bisa dikirimkan melalui</p>
+        <p>salah satu rekening di bawah ini. Doa dan restu Anda</p>
+        <p>merupakan karunia terbesar dalam pernikahan kami.</p>
+        
+        <div class="bank-info">
+          <!-- Bank Mandiri -->
+          <div class="bank">
+            <h2>Bank Mandiri</h2>
+            <img src="assets/images/bank-mandiri-logo.png" alt="Bank Mandiri" class="bank-logo"/>
+            <p id="bank1">0123456789</p>
+            <p>A/N Nama Rekening</p>
+            <button class="copy-btn" onclick="copyToClipboard('bank1')">
+              <img src="assets/images/copy-icon.png" alt="Copy" />
+            </button>
+          </div>
+          
+          <!-- GoPay -->
+          <div class="bank">
+            <h2>GoPay</h2>
+            <img src="assets/images/gopay-logo.png" alt="GoPay" class="bank-logo"/>
+            <p id="bank2">9876543210</p>
+            <p>A/N Nama Rekening</p>
+            <button class="copy-btn" onclick="copyToClipboard('bank2')">
+              <img src="assets/images/copy-icon.png" alt="Copy" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="section doa-section">
+    <h2>DOA UNTUK MEMPELAI</h2>
+    <p class="arabic">
+      بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+    </p>
+    <p class="translation">
+      "Barakallahu Laka wa Baraka 'alaika wa Jama'a Bainakuma fii Khayrin."
+    </p>
+    <p>
+      Semoga Allah memberi barakah untukmu, dan semoga Allah memberi
+    </p>
+    <p>
+      barakah atasmu, serta mengumpulkan kalian berdua dalam kebaikan.
+    </p>
+    <p class="reference">
+      (Shahih, HR Abu Daud: 2130, at-Tirmidzi: 1091)
+    </p>
+  </div>
+  
+  <div class="section thank-you">
+    <h2>TERIMA KASIH</h2>
+    <p>Kami yang berbahagia,</p>
+    <img src="assets/images/NAMA-PENGANTIN-2.png">
+    <p class="designed-by">Designed by <a href="https://www.instagram.com/invaite.id">invaite.id</a></p>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Fungsi untuk membuka link Google Maps lokasi pernikahan
+    function openMap() {
+      window.open('https://www.google.com/maps?q=Aryaduta+Hotel+Pekanbaru', '_blank');
+    }
+  </script>
+</body>
+</html>
